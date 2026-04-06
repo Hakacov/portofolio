@@ -1,5 +1,8 @@
 import ProjectCard from './ProjectCard';
 import { Project } from '../types';
+import FOOTBALL from '../assets/FOOTBALL.png';
+import MbappeImg from '../assets/Mbappe.png';
+import CurryImg from '../assets/curry.png';
 
 const projects: Project[] = [
   {
@@ -7,7 +10,7 @@ const projects: Project[] = [
     title: 'Mbappe',
     category: 'Football',
     description: 'A complete rebranding for a heritage luxury brand.',
-    imageUrl: 'src/assets/Mbappe.png',
+    imageUrl: MbappeImg,
     year: '2024'
   },
   {
@@ -15,7 +18,7 @@ const projects: Project[] = [
     title: 'Football Shoes',
     category: 'Football',
     description: 'A digital publication dedicated to classical architecture.',
-    imageUrl: 'src/assets/FOOTBALL.png',
+    imageUrl: FOOTBALL,
     year: '2024'
   },
   {
@@ -23,7 +26,7 @@ const projects: Project[] = [
     title: 'Curry',
     category: 'Basketball',
     description: 'An immersive digital gallery for contemporary art.',
-    imageUrl: 'src/assets/curry.png',
+    imageUrl: CurryImg,
     year: '2023'
   },
 ];
