@@ -1,12 +1,13 @@
 import { motion } from 'motion/react';
+import myImg from '../assets/my.jpeg';
 
 export default function About() {
   return (
     <section id="about" className="px-6 md:px-12 py-32 bg-sky-blue relative">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <div className="relative w-40 h-40 md:w-56 md:h-56 overflow-hidden pixel-border bg-mario-green mx-auto lg:mx-0">
-          <img 
-            src="src/assets/my.jpeg" 
+          <img
+            src={myImg}
             alt="Portrait"
             className="w-full h-full object-cover pixelated"
             referrerPolicy="no-referrer"
@@ -47,9 +48,9 @@ export default function About() {
           </div>
         </div>
       </div>
-      
+
       {/* Some floating coins */}
-      <motion.div 
+      <motion.div
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
         className="absolute top-10 right-1/4 w-8 h-10 bg-mario-yellow pixel-border rounded-lg flex items-center justify-center text-black text-xs"
